@@ -14,7 +14,7 @@
                     nombre CDATA #REQUIRED
                     telefono CDATA #FIXED "957349618">
 <!ATTLIST ingredientes ID #REQUIRED
-                    contenido principal (ron | ginebra | vodka)>
+                    contenidoPrincipal (ron | ginebra | vodka)>
 
 <!ENTITY % atributoCoste "coste DATA #IMPLIED">
 <!ATTLIST precio %atributoCoste;>
