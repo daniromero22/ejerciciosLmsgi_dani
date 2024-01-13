@@ -1,0 +1,19 @@
+<!ELEMENT juego (campeones, modos)>
+<!ELEMENT campeones (campeon+)>
+<!ELEMENT modos (modo*)>
+<!ELEMENT campeon (rol, dificultad?, (nuevo | antiguo))>
+<!ELEMENT rol (#PCDATA | lugarDelMapa)*>
+<!ELEMENT lugarDelMapa (#PCDATA)>
+<!ELEMENT dificultad EMPTY>
+<!ELEMENT nuevo EMPTY>
+<!ELEMENT antiguo EMPTY>
+<!ATTLIST dificultad nivel (baja | media | alta) "media">
+<!ATTLIST campeon nombre (ahri | atrox | ekko | xayah | brand ) "ahri"
+                    tipo CDATA #IMPLIED
+                    codigo ID #REQUIRED
+                    lugarDeCombate CDATA #FIXED "grieta del invocador">
+<!ENTITY % atributoNombre "nombre CDATA #REQUIRED">
+<!ATTLIST juego losMejoresPersonajes IDREFS #REQUIRED>
+<!ELEMENT modo (#PCDATA)>
+<!ATTLIST modo masDestacado IDREF #REQUIRED
+                %atributoNombre;>

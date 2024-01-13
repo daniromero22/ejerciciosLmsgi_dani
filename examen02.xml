@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE juego SYSTEM "examen02.dtd">
+<juego losMejoresPersonajes="ahr xay">
+   <campeones>
+      <campeon nombre="ahri" tipo="mago" codigo="ahr" lugarDeCombate="grieta del invocador">
+         <rol>
+            Mid
+            <lugarDelMapa> centro </lugarDelMapa>
+         </rol> 
+         <dificultad nivel="baja"/>
+         <antiguo />
+      </campeon>
+      <campeon nombre="atrox" tipo="tanque" codigo="atr" lugarDeCombate="grieta del invocador">
+         <rol>
+            Top
+            <lugarDelMapa>Superior</lugarDelMapa>
+         </rol>
+         <dificultad nivel="baja"/>
+         <antiguo />
+      </campeon>
+      <campeon nombre="ekko" tipo="mago" codigo="ekk" lugarDeCombate="grieta del invocador">
+         <rol/>
+         <dificultad nivel="baja"/>
+         <antiguo />
+      </campeon>
+      <campeon nombre="xayah" tipo="mago" codigo="xay" lugarDeCombate="grieta del invocador">
+         <rol/>
+         <dificultad nivel="baja"/>
+         <antiguo />
+      </campeon>
+   </campeones>
+
+   <modos>
+      <modo nombre="aram" masDestacado="xay"></modo>
+      <modo nombre="teamTactics" masDestacado="ahr"></modo>
+      <modo nombre="grietadelinvocador" masDestacado="atr"></modo>
+   </modos>
+</juego>

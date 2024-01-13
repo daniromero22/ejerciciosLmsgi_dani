@@ -1,0 +1,24 @@
+<!ELEMENT receta (medicamentos, pacientes, medico)*>
+<!ELEMENT medicamentos (medicamento)*>
+<!ELEMENT medicos (medico)>
+<!ELEMENT pacientes (paciente+)>
+<!ELEMENT paciente (trabajo, recetado?, (joven | mayor))>
+<!ELEMENT trabajo (#PCDATA | peligro)*>
+<!ELEMENT peligro ANY>
+<!ELEMENT recetado EMPTY>
+<!ELEMENT joven EMPTY>
+<!ELEMENT mayor EMPTY>
+<!ATTLIST recetado medicamento IDREF #REQUIRED>
+<!ATTLIST paciente nombre (dani | alex | rafa | maria | jose ) "dani"
+                    edad CDATA #IMPLIED
+                    codigo ID #REQUIRED
+                    procedencia CDATA #FIXED "lucena">
+<!ENTITY % atributoNombre "nombre CDATA #REQUIRED">
+<!ATTLIST receta elMedicamentoPorExcelencia IDREFS #REQUIRED>
+<!ELEMENT medico (#PCDATA)>
+<!ATTLIST medico medicaA IDREF #REQUIRED
+                %atributoNombre;>
+<!ENTITY porDefecto "Paracetamol">
+<!ELEMENT medicamento EMPTY>
+<!ATTLIST medicamento %atributoNombre;
+                        codigo ID #REQUIRED>

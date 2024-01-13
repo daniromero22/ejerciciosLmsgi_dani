@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="movilesYFundas" type="tipomovil"/>
+
+  <xs:complexType name="tipomovil" mixed="true">
+    <xs:sequence>
+      <xs:element name="telefono" type="masAtributos" maxOccurs="unbounded"/>
+      <xs:element name="funda" type="tipoParte" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoParte">
+    <xs:all>
+      <xs:element name="estilo" type="tipoNombreDeParte"/>
+      <xs:element name="escenario" minOccurs="0" type="tipoAtributoNombre"/>
+      <xs:element name="pais" minOccurs="0" type="tipoAtributoNombre"/>
+      <xs:element name="puntuacion" type="tipoPuntuación"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="tipoAtributoNombre">
+    <xs:attribute name="nombre" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="masAtributos">
+    <xs:complexContent>
+      <xs:extension base="tipoAtributoNombre">
+        <xs:attribute name="relacionCon" type="xs:string"/>
+        <xs:attribute name="enemigo" type="tipoAtributoEnemigoPorPattern"/>
+        <xs:attribute name="rol" type="xs:string"/>
+          </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>  
+
+
+  <xs:complexType name="tipoPuntuación">
+    <xs:sequence>
+      <xs:element name="valoracion" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="longitudMinimaUnCaracter">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoAtributoEnemigo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Johnny"/>
+      <xs:enumeration value="Daniel"/>      
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoAtributoEnemigoPorPattern">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="((Johnny)|(Daniel)|( )){1,}"/>      
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoNombreDeParte">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[I]{1,3}[ - ]?.*"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

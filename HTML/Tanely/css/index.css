@@ -1,0 +1,234 @@
+body {
+    background-image: url('Recurso\ 4cabecera.jpg');
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    font-weight: bold;
+}
+h1 {
+    font-size: 60px;
+    font-style: oblique;
+    text-align: left;
+    color: #00ffff;
+    margin: 10px;
+    text-align: center;
+}
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #85007c;
+}
+
+li {
+      float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+background-color: #f24be7;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #85007c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color:#f24be7;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#imgBanner {
+    display: inline-block;
+    width: 100%;
+}
+
+
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20 px;
+}
+
+.contenido2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20 px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #85007c;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.form-register {
+    width: 400px;
+    background: #85007c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #85007c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #00ffff;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #00ffff;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.cuerpo{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo2{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo{
+    z-index: 1;
+    width: 75%;
+    padding: 20px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    background: #fff;
+    box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
+    border-radius: 5px;
+    text-align: justify;
+}
+.parrafo img{
+    width: 310px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.itemifr{
+    text-align: center;
+}
+
+.carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.elemento{
+    flex: 1 0 auto;
+    margin: 0 50px;
+    background-color: red;
+    width: 50%;
+    height: 50%;
+}
+

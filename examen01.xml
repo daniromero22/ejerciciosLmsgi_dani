@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cocteleria SYSTEM "examen01.dtd">
+<cocteleria direccion="calle arébalo" nombre="coctelitos" telefono="957349618">
+   <cocteles>
+      <coctel codigo="marg" contenidoPrincipal="vodka">
+         <nombre/>
+         <precio coste="6" />
+         <alcohol/>
+         <ingredientes/>
+         <disponible/>
+      </coctel>
+    
+   </cocteles>
+   <ofertas>
+      <combo coste="6"/>
+
+   </ofertas> 
+</cocteleria>

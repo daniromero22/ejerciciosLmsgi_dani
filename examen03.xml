@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<movilesYFundas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="examen03.xsd">
+	Karate Kid
+	<telefono nombre="Alice" relacionCon="Daniel Johnny" />
+	<telefono nombre="Daniel" enemigo="Johnny" />
+	<telefono nombre="Johnny" enemigo="Daniel Johnny Daniel Johnny Daniel " />
+	<telefono nombre="Miyagi" rol="sensei" />
+	<funda>
+		<estilo>I - Rosa</estilo>
+		<escenario nombre="California" />
+		<puntuacion>
+			<valoracion>Una web que le da un 9</valoracion>
+			<valoracion>Una web que le da un 10</valoracion>
+		</puntuacion>
+	</funda>
+	<funda>
+		<estilo>III - Azul</estilo>
+		<pais nombre="Japon" />
+		<puntuacion>
+			<valoracion>Una web que le da un 9</valoracion>
+			<valoracion>Una web que le da un 10</valoracion>
+		</puntuacion>
+	</funda>
+</movilesYFundas>

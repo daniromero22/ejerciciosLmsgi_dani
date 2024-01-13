@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE receta SYSTEM "EXAMEN17.dtd">
+<receta elMedicamentoPorExcelencia="par hib">
+   
+   <medicamentos>
+      <medicamento nombre="paracetamol" codigo="par"></medicamento>
+      <medicamento nombre="hibuprofeno" codigo="hib"></medicamento>
+      <medicamento nombre="algidol" codigo="alg"></medicamento>
+   </medicamentos>
+
+   <pacientes>
+      <paciente nombre="dani" edad="21" codigo="dan" procedencia="lucena">
+         <trabajo>
+            Camarero
+            <peligro> en algunas circustancias </peligro>
+         </trabajo> 
+         <recetado medicamento="alg"/>
+         <joven />
+      </paciente>
+      <paciente nombre="maria" edad="55" codigo="mar" procedencia="lucena">
+         <trabajo>
+            carpintera
+            <peligro> carga de objetos pesados </peligro>
+         </trabajo> 
+         <recetado medicamento="par"/>
+         <mayor />
+      </paciente>
+   </pacientes>
+
+   <medico medicaA="dan" nombre="julio"></medico>
+</receta>

@@ -1,0 +1,92 @@
+body {
+    font-family:Verdana, sans-serif;
+    font-size:15px;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    border: 3px solid black;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.flex-wrap > div {
+    width: 32.2%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.box {
+    color: #fff;
+    font-size: 100px;
+    text-align: center ;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, .1);
+    padding: 10px;
+}
+
+.flex-order {
+    display: flex;
+    align-items: stretch;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+  
+.flex-order>div {
+    width: 10%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.Alignmentandcentering{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  
+  .Alignmentandcentering > div {
+    height: 10px;
+    font-size: 6px;
+}
+
+.Align-items {
+    display: flex;
+    align-items: baseline;
+    border: 3px solid black;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.Align-items > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+.box1 {background: #ff00a2;}
+.box2 {background: #ff00ee;}
+.box3 {background: #7300ff;}
+.box4 {background: #2200ff;}
+.box5 {background: #00ff66;}
+.box6 {background: #48ff00;}
+.box7 {background: #bbff00;}
+.box8 {background: #ffe100;}
+.box9 {background: #ff9d00;}
+.box10 {background: #ff0000;}
