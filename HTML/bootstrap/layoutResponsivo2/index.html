@@ -1,42 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Maquetación con recuadros de colores</title>
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="box box-1"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="box box-2"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="box box-3"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="box box-4"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="box box-5"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="box box-6"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="box box-7"></div>
-            </div>
-        </div>
-    </div>
+<html>
+    <head>
+            <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .full{
+            width: 100%;
+            height: 100%;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .pink{
+            background-color: #ff00ff;
+        }
+
+        .orange{
+            background-color: #ff9955;;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+    </head>
+    <body>
+        <header class="text-center ms-" style="background-color: #00ff00;">
+            <h1> TITULO DE LA PAGINA </h1>
+        </header>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-2 col-sm-1 mb-2" >
+                    <div class="full red">
+                        &nbsp;
+                    </div>
+                </div>
+
+                <div class="col-md-10 col-sm-11">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-md-12 " >
+                                <div class="full pink">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-6 col-sm-12 mb-2 ">
+                                <div class="full orange">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-2">
+                                <div class="full orange">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-2">
+                            <div class="col-md-2 col-sm-4 col-xs">
+                                <div class="full blue">&nbsp;</div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs">
+                                <div class="full blue">&nbsp;</div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs">
+                                <div class="full blue">&nbsp;</div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs">
+                                <div class="full blue">&nbsp;</div>
+                            </div> 
+                            <div class="col-md-2 col-sm-4 col-xs" >
+                                <div class="full blue">&nbsp;</div>
+                            </div>
 
 
-</body>
+                            <div class="col-md-2 col-sm-4 col-xs">
+                                <div class="full blue">&nbsp;</div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs">
+                                <div class="full blue">&nbsp;</div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs">
+                                <div class="full blue">&nbsp;</div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs">
+                                <div class="full blue">&nbsp; </div>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs">
+                                <div class="full blue">&nbsp;</div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer class="text-center mt-2" style="background-color: #00ff00;">
+            <h6>FINAL DE LA PAGINA</h6>
+        </footer>
+    </body>
 </html>
