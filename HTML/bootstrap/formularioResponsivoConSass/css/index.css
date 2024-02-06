@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.promocode {
+  color: green;
+}
+
+.buttonfinal {
+  background-color: rgb(17, 114, 224);
+}
+
+.buttonfinal:hover {
+  background-color: rgb(41, 130, 231);
+}
+
+.titulo1 {
+  color: grey;
+}
+
+.titulo2 {
+  color: rgb(0, 0, 0);
+}
+
+/*# sourceMappingURL=index.css.map */

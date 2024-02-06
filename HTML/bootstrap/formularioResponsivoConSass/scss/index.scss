@@ -1,0 +1,26 @@
+@import "_colors.scss";
+
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+}
+.promocode{
+  color: $promocodecolor;
+}
+.buttonfinal{
+  background-color: $buttoncolor;
+}
+.buttonfinal:hover{
+  background-color: $hoverbuttoncolor;
+}
+
+@mixin color-titulo($color) {
+  color: $color;
+}
+
+.titulo1{
+  @include color-titulo(grey)
+}
+.titulo2{
+  @include color-titulo($textcolor)
+}
