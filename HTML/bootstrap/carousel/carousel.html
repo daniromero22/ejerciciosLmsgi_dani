@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Carousel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/acd09d2f5d.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<style>
+  .medidas{
+    height: 700px;
+  }
+  body {
+      overflow-x: hidden;
+  }
+  
+</style>
+
+<body>
+  <div class="row">
+    <div class="col-sm-auto bg-light sticky-top">
+      <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
+        <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip"
+          data-bs-placement="right" data-bs-original-title="Icon-only">
+          <i class="bi-bootstrap fs-1"></i>
+        </a>
+        <ul
+          class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center justify-content-between w-100 px-3 align-items-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right">
+              <i class="fa-solid fa-house fa-2xl" style="color: #000000;"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right">
+              <i class="fa-solid fa-table-columns fa-2xl" style="color: #000000;"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right">
+              <i class="fa-solid fa-sort fa-2xl" style="color: #000000;"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right">
+              <i class="fa-brands fa-product-hunt fa-2xl" style="color: #000000;"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right">
+              <i class="fa-solid fa-person fa-2xl" style="color: #000000;"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi-person-circle h2"></i>
+          </a>
+          <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+          </ul>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-sm p-3 min-vh-100">
+      <div class="container-fluid w-100">
+        <div id="carouselExampleCaptions" class="carousel slide container-fluid" data-bs-ride="carousel">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+              class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="fotografo-vista-lateral-camara.jpg" class="d-block w-100 medidas" alt="...">
+              <div class="carousel-caption" style="text-align: left;">
+                <h5>Texto 1</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+                <button type="button" class="btn btn-primary">Hola</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="ciudad-inteligente-futurista-tecnologia-red-global-5g.jpg" class="d-block w-100 medidas"
+                alt="...">
+              <div class="carousel-caption">
+                <h5>Texto 2</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+                <button type="button" class="btn btn-primary">Hola</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="vista-superior-hombre-trabajando-escritorio.jpg" class="d-block w-100 medidas" alt="...">
+              <div class="carousel-caption" style="text-align: right;">
+                <h5>Texto 3</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+                <button type="button" class="btn btn-primary">Hola</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="text-align: center; border-style: none;">
+              <img class="card-img-top mx-auto d-block rounded-circle p-4" style="width: 300px;" src="circulo.png"
+                alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Heading</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-secondary">View details >></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="text-align: center; border-style: none;">
+              <img class="card-img-top mx-auto d-block rounded-circle p-4 circulo" style="width: 300px;"
+                src="circulo.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Heading</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-secondary">View details >></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="text-align: center; border-style: none;">
+              <img class="card-img-top mx-auto d-block rounded-circle p-4 circulo" style="width: 300px;"
+                src="circulo.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Heading</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-secondary">View details >></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="background-secondary mt-5">
+        <div class="row">
+          <div class="col-lg-8 p-5" style="margin-top: 120px;">
+            <h1>First featurette heading. <span style="color: grey;">It'll blow your mind.</span></h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit nam odit quas, iure
+              explicabo, sapiente maxime iusto, aspernatur fuga et dol</p>
+          </div>
+          <div class="col-lg-4">
+            <img style="height: 500px; width: 500px;" src="cuadrado.png">
+          </div>
+        </div>
+        <hr class="background-secondary mt-5">
+        <div class="row">
+          <div class="col-lg-4">
+            <img style="height: 500px; width: 500px;" src="cuadrado.png">
+          </div>
+          <div class="col-lg-8 p-5" style="margin-top: 120px;">
+            <h1>Oh yeah it's that good.<span style="color: grey;">See for yourself.</span></h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit nam odit quas, iure
+              explicabo, sapiente maxime iusto, aspernatur fuga et dol</p>
+          </div>
+        </div>
+        <hr class="background-secondary mt-5">
+        <div class="row">
+          <div class="col-lg-8 p-5" style="margin-top: 120px;">
+            <h1>And lastly, this one.<span style="color: grey;">Checkmate</span></h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit nam odit quas, iure
+              explicabo, sapiente maxime iusto, aspernatur fuga et dol</p>
+          </div>
+          <div class="col-lg-4">
+            <img style="height: 500px; width: 500px;" src="cuadrado.png">
+          </div>
+        </div>
+        <hr class="background-secondary my-5">
+        <footer class="py-3">
+          <div class="row">
+            <div class="col-10">
+              <p style="color: grey;">ⓒ 2017-2021 Company,Inc · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+            </div>
+            <div class="col-2">
+              <a href="#" class="justify-content-end">Back to top</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
